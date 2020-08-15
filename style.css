@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: aqua;
+  background-color: #92613e;
   color: black;
   font-family: SB Heading, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
@@ -32,13 +32,13 @@ form button {
   background: white;
 }
 form button {
-  color: coral;
+  color: #dcbe4f;
   background: cornsilk;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: coral;
+  background: #dcbe4f;
   color: cornsilk;
 }
 
@@ -66,7 +66,7 @@ form button:hover {
 }
 .trash-btn,
 .complete-btn {
-  background: coral;
+  background: #dcbe4f;
   color: cornsilk;
   border: none;
   padding: 1rem;
@@ -108,7 +108,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: coral;
+  color: #dcbe4f;
   width: 10rem;
   padding: 1.2rem;
   cursor: pointer;
@@ -117,7 +117,7 @@ select {
 .select::after {
   content: "\25bc ";
   position: absolute;
-  background: coral;
+  background: #dcbe4f;
   top: 0;
   right: 0;
   padding: 1.2rem;
@@ -127,5 +127,5 @@ select {
 
 .select:hover::after {
   background: cornsilk;
-  color: coral;
+  color: #dcbe4f;
 }
