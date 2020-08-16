@@ -1,8 +1,13 @@
-//Dom selectors
+//Dom selectors for todo
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
+// Selectors for color generator
+var css = document.querySelector("h3");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var body = document.getElementById("gradient");
 
 //Event Listeners
 document.addEventListener("DOMContentLoaded", getTodos);
@@ -10,7 +15,17 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 
+color1.addEventListener("input", setGradient);
+color2.addEventListener("input", setGradient);
+
 // Functions
+
+function setGradient() {
+  body.style.background =
+    "linear-gradient(to right," + color1.value + "," + color2.value + ")";
+  css.textContent = body.style.background + ";";
+}
+
 function addTodo(event) {
   //This stops from submission and refreshing of page
   event.preventDefault();
