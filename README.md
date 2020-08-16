@@ -9,4 +9,4 @@ Using this app, one can Add list, Mark done list, Delete list and also sort them
 
 List are stored on local storage.
 
-User can generate his/her own background color of the app, by using color palette.
+User can generate his/her own background color of the app in real time, by using color palette.
